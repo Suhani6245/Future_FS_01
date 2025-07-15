@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a31e373168.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header>
+        <!--Navigation bar-->
+        <span>
+            
+            <div class="navbar">
+                <div id="logo">S</div>
+                <a href="main.html">Home</a>
+                <a href="about.html#projects">Work</a>
+                <a href="about.html">About</a>
+                <button class="contact" ><a href="contact.html" style="color: white;">Contact</a></button>
+                
+            </div>
+
+        </span>
+    </header>
+    <main>
+        <!--bio-->
+        <div class="container">
+            <div>
+                <h1>I'm Suhani.</h1>
+            </div>
+            <div class="bio">
+                <p>Hi!👋<br> I'm a B.Tech CSE student at Lovely Professional University, set to graduate in 2028. I'm passionate about all things tech—especially web development, app development, and software development. I love exploring how things work behind the scenes and enjoy building cool, user-friendly projects. Always up for learning something new and collaborating on exciting ideas!</p>
+            </div>
+            <div>
+                <button class="contact"><a href="">View Projects</a></button>
+                <a href="cv.pdf" download="Suhani_Resume.pdf" class="download-btn">
+                    <i class="fa-solid fa-file-arrow-down fa-1.5x" style="margin-right: 10px;"></i>Download Resume
+                </a>
+
+            </div>
+        </div>
+        <div class="container">
+            <h1>Let's Connect.</h1>
+        </div>
+        <!--socials-->
+        <div class="socials">
+            
+            <div class="github" style="margin-bottom: 30px;">
+                <i class="fa-brands fa-square-github fa-8x"></i>
+                <div class="text">
+                    <p>GitHub</p>
+                    <p><a href="https://github.com/Suhani6245" target="_blank" title="GitHub Profile">Click here to connect</a></p>
+                </div>
+            </div>
+            <div class="linkedin" style="margin-bottom: 30px;">
+                <i class="fa-brands fa-linkedin fa-8x"></i>
+                <div class="text">
+                    <p>LinkedIn</p>
+                    <p><a href="https://www.linkedin.com/in/suhani200611/" target="_blank">Click here to connect</a></p>
+                </div>
+            </div>
+            <div class="twitter" style="margin-bottom: 30px;">
+                <i class="fa-brands fa-square-x-twitter fa-8x"></i>
+                <div class="text">
+                    <p>X (formerly Twitter)</p>
+                    <p><a href="https://x.com/Suhani6245" target="_blank">Click here to connect</a></p>
+                </div>
+            </div>
+            <div class="mail" style="margin-bottom: 30px;">
+                <i class="fa-solid fa-envelope fa-8x"></i>
+                <div class="text">
+                    <p>Email</p>
+                    <p><a href="mailto:su1106hani@gmail.com">Click here to connect</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Feedback Section -->
+<h1 style="margin: 50px 50px 50px 70px;">Leave Your Feedback.</h1>
+
+<div class="feedback-container">
+  <form id="feedback-form" action="https://formsubmit.co/kumari2006suhani@gmail.com" method="POST" class="feedback-form">
+    
+    <!-- User Inputs -->
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="feedback" placeholder="Your feedback..." rows="6" required></textarea>
+
+    <!-- ✅ Spam Protection -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- ✅ Email Confirmation -->
+    <input type="hidden" name="_confirmation" value="true">
+
+    <!-- ✅ Email Subject -->
+    <input type="hidden" name="_subject" value="New Feedback Submission">
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+
+  <!-- ✅ Thank You Popup -->
+  <div id="thank-you-popup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <h2>Thank you!</h2>
+      <p>Your feedback has been submitted. Please check your email to confirm. 😊</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+</div>
+
+    </main>
+   <footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Suhani. All rights reserved.</p>
+        <p>Designed with ❤️ by Suhani</p>
+    </div>
+   </footer>
+   <!-- ✅ Thank You Popup -->
+<div id="thank-you-popup" class="popup">
+  <div class="popup-content">
+    <h2>Thank you!</h2>
+    <p>Your message has been sent successfully 😊</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+    <script src="sheet.js"></script>
+</body>
+</html>

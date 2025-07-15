@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+  
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div id="logo">S</div>
+      <a href="main.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="about.html#projects">Work</a>
+      <button class="contact"><a href="contact.html" style="color: white;">Contact</a></button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contact Me.</h1>
+
+<div class="contact-container">
+  <h2>Kindly fill the form to connect 😊</h2>
+
+  <form id="contact-form" action="https://formsubmit.co/kumari2006suhani@gmail.com" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+    <!-- ✅ Spam Protection -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New message from portfolio contact form">
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- ✅ Thank You Popup -->
+  <div id="thank-you-popup" class="popup">
+    <div class="popup-content">
+      <h2>Thank you!</h2>
+      <p>Your message has been sent successfully. 😊</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <!-- ✅ Social Links -->
+  <div class="social-links">
+    <h3>Connect with me:</h3>
+    <a href="https://github.com/Suhani6245" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/suhani200611/" target="_blank">LinkedIn</a>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Suhani. All rights reserved.</p>
+      <p>Designed with ❤️ by Suhani</p>
+    </div>
+  </footer>
+  <script src="contact.js"></script>
+</body>
+</html>

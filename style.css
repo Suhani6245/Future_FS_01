@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: rgb(251, 252, 252);
+    margin: 30px 30px 30px 30px;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-right: auto;
+  border: black 2px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; 
+  overflow: hidden; /* Prevent content overflow */
+  min-width: 50px; /* Keep circular shape intact */
+  min-height: 50px;
+  box-sizing: border-box; /* Include border in dimensions */
+}
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 30px 0px 30px;
+      color: black;
+      margin-right: 50px;
+}
+
+.navbar {
+      display: flex;
+      gap: 3%;
+}
+
+.navbar a {
+      color: black;
+      text-decoration: none;
+      padding: 0.5rem;
+      font-size: 20px;
+}
+
+.navbar a:hover{
+      color: grey;
+}
+.contact{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 5px;
+        border: black 2px solid;
+        height: 40px;
+        background-color: black;
+        color: white;
+}
+.contact:hover {
+        background-color: rgb(52, 52, 52);
+        color: white;
+        border: rgb(52, 52, 52) 2px solid;
+
+}
+  
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 50px 70px;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.container button a{
+     text-decoration: none;
+    color: white;
+}
+.container p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(67, 66, 66);
+    margin-top: 30px;
+}
+.container button{
+    padding: 0px 15px 0px 15px;
+    margin-top: 50px;
+}
+.socials {
+    display: flex;
+    justify-content: space-evenly; /* or space-between */
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 30px;
+    text-align: center;
+    padding: 10px 10px 50px 10px;
+}
+
+.socials .text{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.socials a{
+    color: rgb(67, 66, 66);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.socials a:hover{
+    color: rgb(70, 103, 189);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.container .contact{
+    margin-bottom: 30px;
+}
+
+.socials .github,.linkedin,.twitter,.mail {
+    background-color: rgb(255, 255, 255);
+    padding: 50px 10px 50px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.github:hover,.linkedin:hover,.twitter:hover,.mail:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:  rgb(255, 255, 255);
+    padding: 50px 10px 50px 10px;
+    border-radius: 20px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.feedback-container {
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.feedback-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.feedback-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #333;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: popupFadeIn 0.3s ease;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+}
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 30px;
+  background-color: rgb(191, 190, 190);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: grey;
+  color: black;
+}
+
+
+.popup-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes popupFadeIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+
+/*FOR SMALLER SCREEN SIZES*/
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  #logo {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar .contact{
+    width: 40%;
+    margin-top: 10px;
+  }
+  .container {
+    margin: 30px 10px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  .contact {
+    width: 100%;
+    font-size: 18px;
+  }
+  .socials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+
+}
+
+
